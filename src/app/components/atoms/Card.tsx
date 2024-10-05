@@ -15,11 +15,11 @@ export default function Card({
 }) {
 	return (
 		<div
-			className={`p-1 min-w-[250px] flex flex-col items-center  ${
+			className={`p-1 min-w-[200px] flex flex-col items-center  ${
 				!name && " border border-gray-500"
 			}`}>
 			<Image
-				className="object-contain h-[250px] w-[250px]"
+				className="object-contain h-[250px] w-[200px]"
 				src={`/images/${imgSrc}`}
 				alt={name || ""}
 				width={250}

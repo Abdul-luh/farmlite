@@ -1,28 +1,27 @@
+import Link from "next/link";
 import { AiFillMessage } from "react-icons/ai";
 import { FaUserFriends, FaBell } from "react-icons/fa";
 import { LuHome } from "react-icons/lu";
 
 export default function Footer() {
 	return (
-		<div className="sticky bottom-0 grid grid-cols-4 justify-evenly  bg-[#008000] text-white text-2xl  w-full p-2">
-			<div className="flex flex-col items-center">
+		<div className="sticky bottom-0 grid grid-cols-4 justify-evenly  bg-[#008000] text-white text-base sm:text-2xl text-center w-full p-2">
+			<Link href="/" className="flex flex-col items-center">
 				<LuHome />
 				<p className="capitalize">Home</p>
-			</div>
-			<div className="flex flex-col items-center">
+			</Link>
+			<Link href="/driver" className="flex flex-col items-center">
 				<FaUserFriends />
 				<p className="capitalize">Driver</p>
-			</div>
-			<div className="flex flex-col items-center">
+			</Link>
+			<Link href="/message" className="flex flex-col items-center">
 				<AiFillMessage />
-
 				<p className="capitalize">Message</p>
-			</div>
-			<div className="flex flex-col items-center">
+			</Link>
+			<Link href="/notification" className="flex flex-col items-center">
 				<FaBell />
-
 				<p className="capitalize">Notification</p>
-			</div>
+			</Link>
 		</div>
 	);
 }
