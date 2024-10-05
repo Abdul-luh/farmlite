@@ -4,7 +4,7 @@ import Location from "../atoms/Location";
 
 export default function Header() {
 	return (
-		<header className="w-full">
+		<header className="w-full pb-8">
 			<Navbar />
 			<Location />
 		</header>
