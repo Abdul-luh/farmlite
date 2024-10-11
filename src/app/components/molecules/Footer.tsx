@@ -5,7 +5,7 @@ import { LuHome } from "react-icons/lu";
 
 export default function Footer() {
 	return (
-		<div className="sticky bottom-0 grid grid-cols-4 justify-evenly  bg-[#008000] text-white text-base sm:text-2xl text-center w-full p-2">
+		<footer className="sticky bottom-5 grid grid-cols-4 justify-evenly  bg-[#008000] text-white text-base sm:text-2xl text-center w-full p-2">
 			<Link href="/" className="flex flex-col items-center">
 				<LuHome />
 				<p className="capitalize">Home</p>
@@ -22,6 +22,6 @@ export default function Footer() {
 				<FaBell />
 				<p className="capitalize">Notification</p>
 			</Link>
-		</div>
+		</footer>
 	);
 }

@@ -3,7 +3,7 @@ import Footer from "./Footer";
 
 export default function Wrapper({ children }: { children: React.ReactNode }) {
 	return (
-		<div className="flex flex-col min-h-screen max-w-screen gap-6 font-[family-name:var(--font-geist-sans)]">
+		<div className="flex flex-col min-h-screen h-full max-w-screen gap-6 font-[family-name:var(--font-geist-sans)]">
 			<Header />
 			<div className="pb-8">{children}</div>
 			<Footer />

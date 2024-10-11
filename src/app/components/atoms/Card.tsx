@@ -6,17 +6,19 @@ export default function Card({
 	title,
 	price,
 	minAmount,
+	className,
 }: {
 	imgSrc: string;
 	name?: string;
 	title?: string;
 	price?: string;
 	minAmount?: string;
+	className?: string;
 }) {
 	return (
 		<div
-			className={`p-1 min-w-[200px] flex flex-col items-center  ${
-				!name && " border border-gray-500"
+			className={`py-1 px-2 flex flex-col items-center  border border-gray-500 ${className}  ${
+				!name && " bg-[#C4C4C4]"
 			}`}>
 			<Image
 				className="object-contain h-[250px] w-[200px]"

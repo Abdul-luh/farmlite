@@ -23,7 +23,9 @@ export default function Navbar() {
 					className="absolute w-screen h-screen top-0 left-0 z-10 bg-gray-50/25"
 					onClick={handleNavClick}>
 					<div className="relative bg-white w-72 h-screen p-2">
-						<p className="capitalize bold text-right ">Abdulazeez MAestro</p>
+						<p className="capitalize bold text-right pb-20 pt-4">
+							Abdulazeez MAestro
+						</p>
 						<ul className="flex flex-col gap-2 py-4 text-2xl">
 							<li className="cursor-pointer pl-4">
 								<Link href="/">My Community</Link>

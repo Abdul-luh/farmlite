@@ -10,7 +10,12 @@ export default function CategoriesArea() {
 				{/* CATEGORIES CARDS  */}
 
 				{catgs.map((catg) => (
-					<Card key={catg.name} imgSrc={catg.src} name={catg.name} />
+					<Card
+						key={catg.name}
+						imgSrc={catg.src}
+						name={catg.name}
+						className="min-w-[200px]"
+					/>
 				))}
 			</div>
 		</div>
