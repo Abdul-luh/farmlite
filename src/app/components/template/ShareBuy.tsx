@@ -1,9 +1,10 @@
 "use client";
 import { usePathname } from "next/navigation";
-import ContactList from "../atoms/ContactList";
+import React from "react";
 import Wrapper from "../molecules/Wrapper";
+import ContactList from "../atoms/ContactList";
 
-export default function MessageTemp() {
+export default function ShareBuyTemp() {
 	const names = ["Ali Musa", "Precious", "Mummy Deborah", "Kola", "Hajia"];
 	const route = usePathname();
 
