@@ -14,7 +14,7 @@ export default function SearchArea({ route }: { route: string }) {
 	console.log(route);
 	const msgRoute = route === "/message";
 	const shareRoute = route === "/sharebuy";
-	const notificationRoute = route === "/notification";
+	// const notificationRoute = route === "/notification";
 	return (
 		<div className="flex flex-col justify-between gap-8 w-[80%] p-2 shadow-inner shadow-gray-400 mx-auto">
 			<div className={`flex justify-between gap-2 w-full`}>
