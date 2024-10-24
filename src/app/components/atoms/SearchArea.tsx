@@ -14,13 +14,19 @@ export default function SearchArea({ route }: { route: string }) {
 	console.log(route);
 	const msgRoute = route === "/message";
 	const shareRoute = route === "/sharebuy";
-	// const notificationRoute = route === "/notification";
+	const notificationRoute = route === "/notification";
 	return (
-		<div className="flex flex-col justify-between gap-8 w-[80%] p-2 shadow-inner shadow-gray-400 mx-auto">
+		<div
+			className={`flex flex-col justify-between gap-8 w-[80%] p-2 ${
+				msgRoute &&
+				shareRoute &&
+				notificationRoute &&
+				" shadow-inner shadow-gray-400"
+			} mx-auto`}>
 			<div className={`flex justify-between gap-2 w-full`}>
 				<div
 					className={`flex items-center rounded-full p-1 w-full ${
-						msgRoute && shareRoute
+						msgRoute && shareRoute && notificationRoute
 							? "bg-[#008000] text-white flex-row-reverse"
 							: " bg-gray-300 text-[#008000] "
 					}`}>
